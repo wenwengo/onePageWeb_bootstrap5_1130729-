@@ -1,91 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap 5 Website Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    body {
-      background-color:#000;
-    }
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  </style>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
 </head>
 <body>
+    <!-- 首頁 -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="wow fadeIn">
+                <div class="opacity-25">
+                    <!-- bgimg by css -->
+                </div>
 
-<div class="p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap 5 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
+                <h1>歡迎來Wengo</h1>
+                <h2>讓我們來 <span class="rotating">抓住美麗的夢想</span></h2>
+                <div class="actions">
+                    <a href="#about" class="btn-get-started">充實自我</a>
+                    <a href="#services" class="btn-services">我們實踐的腳步</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#tag_active">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#tag_link1">Link1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#tag_link2">Link2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#tag_disabled">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- 首頁end -->
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3 class="mt-4">Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
+    <!-- title -->
+    <nav class="navbar navbar-expand-sm navbar-light  fixed-top" id="neubar">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#home"><img src="/static_files/images/logos/logo_2.png" height="60" /></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="#movie">影片介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="#">XXX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="#gallery"> 回憶畫廊</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="contacts" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            關於我們
+                        </a>
+                        <ul class="dropdown-menu active" aria-labelledby="contacts">
+                            <li><a class="dropdown-item" href="#map">交通地圖</a></li> <!-- 交通地圖 -->
+                            <li><a class="dropdown-item" href="#">關於我們</a></li> <!-- 關於我們 -->
+                            <li><a class="dropdown-item" href="#">連絡我們</a></li> <!-- 連絡我們 -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- movie -->
+    <div id="movie"></div>
+    <div class="container-fluid container-1">
+        <div class="row h-100">
+            <div class="col-sm-12 col-lg-6 bg-warning p-sm-1 p-lg-5">
+                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/L0MK7qz13bU?si=y0NR9p4LHHfjgAiK"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            <div class="col-sm-12 col-lg-6 bg-secondary">
+                <div class="w-100 h-100 p-5 mt-5 border border-info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sequi totam nulla quos corporis hic
+                    accusamus modi culpa at minima! Laboriosam tempore provident incidunt, excepturi beatae laudantium
+                    accusantium magni. In consequatur quia totam exercitationem corporis debitis dolor tempore
+                    perspiciatis veniam nostrum a quasi, reiciendis ab quo nulla. At, assumenda ratione!
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-      <h2 class="mt-5">TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <!-- Map -->
+    <div id="map"></div>
+    <div class="container-fluid container-2 bg-danger">
+        <div class="row h-100">
+            <div class="col-sm-12 col-lg-4 bg-warning">
+                <div class="w-100 h-100 p-5 mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sequi totam nulla quos corporis hic
+                    accusamus modi culpa at minima! Laboriosam tempore provident incidunt, excepturi beatae laudantium
+                    accusantium magni. In consequatur quia totam exercitationem corporis debitis dolor tempore
+                    perspiciatis veniam nostrum a quasi, reiciendis ab quo nulla. At, assumenda ratione!
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-lg-8 bg-secondary">
+                <iframe class="w-100 h-100 p-5"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703506716216!2d121.41694067595641!3d25.04413413788237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1716866300021!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
+    <!-- goto Top -->
+    <a id="topBtn" class="btn btn-danger btn-lg position-fixed bg-dark bottom-0 end-0 mb-3 me-3" href="#"
+        role="button ">Top</a>
+    <br><br><br><br><br>
 
+    <!--  Gallery -->
+
+    <div id="gallery"></div>
+    <div class="container container-0 ">
+        <div class="row text-center ">
+            <div class="col-sm-12 col-lg-4 mb-3 ">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/869/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/967/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/1002/400/300" alt="" srcset="">
+            </div>
+        </div>
+        <div class="row text-center ">
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/974/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/825/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/536/400/300" alt="" srcset="">
+            </div>
+        </div>
+        <div class="row text-center ">
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/537/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/53/400/300" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-3">
+                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/903/400/300" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--
+    連絡我們
+  -->
+    <div id="c"></div>
+    <div class="container container-1 ">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h3 class="section-title">連絡我們</h3>
+                <!-- <p class="section-description">感謝支持電子報</p> -->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                placeholder="Your Mobile Number" data-rule="minlen:4"
+                                data-msg="Please enter at mobile" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+
+
+    </script>
 </body>
+
 </html>
