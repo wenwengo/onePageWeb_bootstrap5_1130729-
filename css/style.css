@@ -119,6 +119,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 36px;
   }
 }
+.headfont{
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
 
 #hero h2 {
   color: #999;
@@ -870,11 +876,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #topBtn {
-  font-size: 25px;
+  font-size: 50px;
   z-index: 999;
 }
 
 img:hover {
+  transition: 1s;
   transform: scale(1.1);
 }
 

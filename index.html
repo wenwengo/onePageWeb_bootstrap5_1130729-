@@ -15,7 +15,7 @@
 
 <body class="bg-secondary">
     <!-- 首頁 -->
-    <section id="hero">
+    <div id="hero">
         <div class="hero-container">
             <div class="wow fadeIn">
                 <div class="opacity-25">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- 首頁end -->
 
     <!-- menu -->
@@ -53,7 +53,7 @@
                         <a class="nav-link mx-2 active" href="#movie">影片介紹</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2 active" href="#gallery"> 回憶畫廊</a>
+                        <a class="nav-link mx-2 active" href="#imgcard"> 回憶畫廊</a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="contacts" role="button"
@@ -62,8 +62,8 @@
                         </a>
                         <ul class="dropdown-menu active" aria-labelledby="contacts">
                             <li><a class="dropdown-item" href="#map">交通地圖</a></li> <!-- 交通地圖 -->
-                            <li><a class="dropdown-item" href="#">關於我們</a></li> <!-- 關於我們 -->
-                            <li><a class="dropdown-item" href="#">連絡我們</a></li> <!-- 連絡我們 -->
+                            <li><a class="dropdown-item" href="#about_us">關於我們</a></li> <!-- 關於我們 -->
+                            <li><a class="dropdown-item" href="#contact_us">聯絡我們</a></li> <!-- 聯絡我們 -->
                         </ul>
                     </li>
                 </ul>
@@ -74,11 +74,7 @@
 
 
     <!-- 輪播 -->
-    <div id="Carousel" class="text-center">
-        <p>
-        <h2>最新活動</h2>
-        </p>
-    </div>
+    <div id="Carousel" class="headfont text-center pt-5"><p><h1>最新活動</h1></p></div>
     <div class="container-carousel">
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -104,7 +100,7 @@
                 </div>
             </div>
 
-            <!-- Left and right controls/icons -->
+         
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -112,124 +108,131 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-        <!-- <div class="row">
-             <div class="col">
- 
-             </div>
-         </div> -->
+
     </div>
     <!-- 輪播 end -->
 
 
     <!-- movies -->
-    <div id="movie" class="text-center">
-        <p>
-        <h2>影片介紹</h2>
-        </p>
-    </div>
+    <div id="movie" class="headfont text-center pt-5"><p><h1>影片介紹</h1></p></div>
     <div class="container-fluid container-1">
         <div class="row h-100">
-            <div class="col-sm-12 col-lg-6  p-sm-1 p-lg-5">
+            
+            <div class="col-sm-12 col-lg-8">
                 <iframe class="w-100 h-100" src="https://www.youtube.com/embed/L0MK7qz13bU?si=y0NR9p4LHHfjgAiK"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
             </div>
-            <div class="col-sm-12 col-lg-6 ">
-                <div class="w-100 h-100 p-5 mt-5 border border-info">
+            <div class="col-sm-12 col-lg-3 "> 
+                <div class="col-lg-4  w-100 h-100 p-5 mt-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sequi totam nulla quos corporis hic
                     accusamus modi culpa at minima! Laboriosam tempore provident incidunt, excepturi beatae laudantium
                     accusantium magni. In consequatur quia totam exercitationem corporis debitis dolor tempore
                     perspiciatis veniam nostrum a quasi, reiciendis ab quo nulla. At, assumenda ratione!
                 </div>
             </div>
+
         </div>
     </div>
 
     <!-- Map -->
-    <div id="map"></div>
-    <div class="container-fluid container-2 bg-danger">
+    <div id="map" class="headfont text-center pt-5"><p><h1>交通地圖</h1></p></div>
+    <div class="container-fluid container-2">
         <div class="row h-100">
-            <div class="col-sm-12 col-lg-4 bg-warning">
-                <div class="w-100 h-100 p-5 mt-5">
+            <div class="col-sm-12 col-lg-3 "> 
+                <div class="col-lg-4  w-100 h-100 p-5 mt-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sequi totam nulla quos corporis hic
                     accusamus modi culpa at minima! Laboriosam tempore provident incidunt, excepturi beatae laudantium
                     accusantium magni. In consequatur quia totam exercitationem corporis debitis dolor tempore
                     perspiciatis veniam nostrum a quasi, reiciendis ab quo nulla. At, assumenda ratione!
                 </div>
-
             </div>
-            <div class="col-sm-12 col-lg-8 bg-secondary">
+            <div class="col-sm-12 col-lg-8">
                 <iframe class="w-100 h-100 p-5"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703506716216!2d121.41694067595641!3d25.04413413788237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1716866300021!5m2!1szh-TW!2stw"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
         </div>
     </div>
+
 
     <!-- goto Top -->
-    <a id="topBtn" class="btn btn-danger btn-lg position-fixed bg-dark bottom-0 end-0 mb-3 me-3" href="#" role="button"
-        style="display:none">Top</a>
-    <br><br><br><br><br>
-
-
-
-    <!--  Gallery -->
-
-    <div id="gallery"></div>
-    <div class="container container-0 ">
-        <div class="row text-center ">
-            <div class="col-sm-12 col-lg-4 mb-3 ">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/869/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/967/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/1002/400/300" alt="" srcset="">
-            </div>
-        </div>
-        <div class="row text-center ">
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/974/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/825/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/536/400/300" alt="" srcset="">
-            </div>
-        </div>
-        <div class="row text-center ">
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/537/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/53/400/300" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-lg-4 mb-3">
-                <img class="img-fluid rounded my-img" src="https://picsum.photos/id/903/400/300" alt="" srcset="">
-            </div>
-        </div>
-    </div>
-
-
+    <a id="topBtn" title="Top" class="btn btn-danger btn-lg position-fixed bg-secondary bottom-0 end-0 mb-0 me-0 border-0" href="#" role="button "
+        style="display:none">🔝</a>
+   
+  
     <!-- imgcard -->
-    <div id="link3"></div>
-    <div class="container-fluid container-h mt-3 container-card">
-        <div class="row justify-content-around align-items-center">
-            <div class="col-12 col-lg-4 text-center">
+    <div id="imgcard" class="headfont text-center pt-5"><p><h1>作品集</h1></p></div>
+    <div class="container container-0  container-card">
+        <div class="row jtext-center ">
+            <div class="col-md-12 col-lg-4 text-center">
                 <h2>Card Image</h2>
-                <p>Image at the top (card-img-top):</p>
+                Image at the top (card-img-top):
                 <div class="card mx-auto" style="width:400px">
-                    <img class="card-img-top" src="https://picsum.photos/id/15/400/300" alt="Card image"
+                    <img class="card-img-top" src="https://picsum.photos/id/869/400/300" alt="Card image"
                         style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
-                        </p>
+                        <br class="card-text">
+                            Some example text some example text. <br>
+                            John Doe is an architect and engineer                        
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-md-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/869/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text. <br>
+                            John Doe is an architect and engineer                        
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            
+            <div class="col-md-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/1002/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="row jtext-center pt-5">
+            <div class="col-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/974/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
@@ -238,29 +241,85 @@
 
             <div class="col-12 col-lg-4 text-center">
                 <h2>Card Image</h2>
-                <p>Image at the top (card-img-top):</p>
+                Image at the top (card-img-top):
                 <div class="card mx-auto" style="width:400px">
-                    <img class="card-img-top" src="https://picsum.photos/id/13/400/300" alt="Card image"
+                    <img class="card-img-top" src="https://picsum.photos/id/825/400/300" alt="Card image"
                         style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
-                        </p>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
                 <br>
             </div>
+            
             <div class="col-12 col-lg-4 text-center">
                 <h2>Card Image</h2>
-                <p>Image at the top (card-img-top):</p>
+                Image at the top (card-img-top):
                 <div class="card mx-auto" style="width:400px">
-                    <img class="card-img-top" src="https://picsum.photos/id/16/400/300" alt="Card image"
+                    <img class="card-img-top" src="https://picsum.photos/id/536/400/300" alt="Card image"
                         style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
-                        </p>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="row jtext-center pt-5">
+            <div class="col-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/537/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/53/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            
+            <div class="col-12 col-lg-4 text-center">
+                <h2>Card Image</h2>
+                Image at the top (card-img-top):
+                <div class="card mx-auto" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/903/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <br class="card-text">
+                            Some example text some example text.<br> 
+                            John Doe is an architect and engineer
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
@@ -273,15 +332,12 @@
 
 
     <!--
-    連絡我們
+    聯絡我們
   -->
-    <div id="c"></div>
+    <div id="contact_us" class="headfont text-center pt-5"></div>
     <div class="container container-1 ">
         <div class="row text-center">
-            <div class="col-md-12">
-                <h3 class="section-title">連絡我們</h3>
-                <!-- <p class="section-description">感謝支持電子報</p> -->
-            </div>
+            <div class="col-md-12"><h1 class="headfont ">聯絡我們</h1></div>
         </div>
         <div class="row text-center">
             <div>
