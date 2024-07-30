@@ -82,6 +82,26 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+.flex-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.flex-line::before,
+.flex-line::after {
+  content: "";
+  flex: 1;
+  border-top: 3px solid #fff;
+}
+
+.flex-line span {
+  padding: 30px 10px;
+  background: #fff;
+
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
