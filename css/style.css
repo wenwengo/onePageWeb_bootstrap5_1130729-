@@ -815,14 +815,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
   display: block;
 }
-
+/* 
 #contact .form .validation {
   color: red;
   display: none;
   margin: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
-}
+} */
 
 #contact .form input, #contact .form textarea {
   border-radius: 0;
